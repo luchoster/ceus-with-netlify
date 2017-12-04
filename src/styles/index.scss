@@ -1,0 +1,13 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./containers/home.scss";
+@import "./app.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
