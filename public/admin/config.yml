@@ -5,29 +5,34 @@ backend:
 publish_mode: editorial_workflow
 
 display_url: https://ceus.vegas/ # This url will display in the top-right of the CMS
-media_folder: "src/assets/imgs/uploads" # Media files will be stored in the repo under static/images/uploads
-public_folder: "images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "static/imgs/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/imgs/uploads" # The src attribute for uploaded media will begin with /images/uploads
 
 collections:
   - name: "pages"
     label: "Pages"
     delete: false # Prevent users from deleting documents in this collection
     editor:
-      preview: false
+      preview: true
     slug: "{{slug}}"
     folder: "_pages"
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - label: Slider
+        name: slider
+        widget: list
+        fields:
+          - {label: Name, name: name, widget: string}
+          - {label: Position, name: position, widget: string}
+          - {label: Photo, name: photo, widget: image}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "services"
     label: "Services"
     delete: false # Prevent users from deleting documents in this collection
     editor:
-      preview: false
+      preview: true
     slug: "{{slug}}"
     folder: "_services"
     create: true # Allow users to create new documents in this collection
