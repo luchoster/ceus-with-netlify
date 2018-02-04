@@ -15,7 +15,7 @@ collections:
     editor:
       preview: false
     slug: "{{slug}}"
-    folder: "_pages/"
+    folder: "/content/pages/"
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
@@ -28,7 +28,7 @@ collections:
     editor:
       preview: false
     slug: "{{slug}}"
-    folder: "_services/"
+    folder: "/content/services/"
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
