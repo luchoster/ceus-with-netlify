@@ -1,9 +1,9 @@
 ---
 slider:
   - name: Logo
-    photo: /imgs/uploads/logo-v.png
+    photo: ''
     position: center
 title: Home
-thumbnail: /imgs/uploads/logo-v.png
+thumbnail: /imgs/uploads/favicon.png
 ---
 Hello from the Home page!
